@@ -1,5 +1,4 @@
-('C:\\Users\\Administrator\\Desktop\\omnitech '
- 'script\\build\\script\\script.exe',
+('C:\\Users\\Administrator\\Omnitech-Script\\build\\script\\script.exe',
  True,
  False,
  True,
@@ -14,11 +13,9 @@
  None,
  None,
  None,
- 'C:\\Users\\Administrator\\Desktop\\omnitech '
- 'script\\build\\script\\script.pkg',
+ 'C:\\Users\\Administrator\\Omnitech-Script\\build\\script\\script.pkg',
  [('PYZ-00.pyz',
-   'C:\\Users\\Administrator\\Desktop\\omnitech '
-   'script\\build\\script\\PYZ-00.pyz',
+   'C:\\Users\\Administrator\\Omnitech-Script\\build\\script\\PYZ-00.pyz',
    'PYZ'),
   ('struct',
    'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38\\lib\\struct.pyo',
@@ -56,12 +53,12 @@
    'script\\script-env\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
    'PYSOURCE'),
   ('script',
-   'C:\\Users\\Administrator\\Desktop\\omnitech script\\script.py',
+   'C:\\Users\\Administrator\\Omnitech-Script\\script.py',
    'PYSOURCE')],
  [],
  False,
  False,
- 1640776564,
+ 1640778518,
  [('run.exe',
    'c:\\users\\administrator\\desktop\\omnitech '
    'script\\script-env\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',

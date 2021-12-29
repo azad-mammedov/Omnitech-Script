@@ -84,8 +84,9 @@ for row in  ws.iter_rows(min_row=settings['last_row'], max_row=ws.max_row):
 
     except Exception as e:
         message = f"{row[0].row} xeta cixdi iterasiya dayandirildi"
-        send_sms_on_error(message)
+        # send_sms_on_error(message)
         settings['last_row'] = row[0].row
+        settings['status'] = 'Iterasiya qirildi'
         open('settings.json','w').write(json.dumps(settings))
         wb2.save(output_file_name)
         sys.exit('Iterasiya qirildi')
@@ -105,6 +106,7 @@ for row in  ws.iter_rows(min_row=settings['last_row'], max_row=ws.max_row):
 
     
 settings['last_row'] = row[0].row
+settings['status']  = "Finished"
 open('settings.json','w').write(json.dumps(settings))
 wb2.save(output_file_name)
 sys.exit('Finished')

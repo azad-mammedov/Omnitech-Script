@@ -1,6 +1,5 @@
 ([('script.exe',
-   'C:\\Users\\Administrator\\Desktop\\omnitech '
-   'script\\build\\script\\script.exe',
+   'C:\\Users\\Administrator\\Omnitech-Script\\build\\script\\script.exe',
    'EXECUTABLE'),
   ('VCRUNTIME140.dll',
    'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38\\VCRUNTIME140.dll',
@@ -53,16 +52,15 @@
   ('_elementtree',
    'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38\\DLLs\\_elementtree.pyd',
    'EXTENSION'),
-  ('libssl-1_1.dll',
-   'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38\\DLLs\\libssl-1_1.dll',
-   'BINARY'),
   ('libcrypto-1_1.dll',
    'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38\\DLLs\\libcrypto-1_1.dll',
+   'BINARY'),
+  ('libssl-1_1.dll',
+   'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38\\DLLs\\libssl-1_1.dll',
    'BINARY'),
   ('libffi-7.dll',
    'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38\\DLLs\\libffi-7.dll',
    'BINARY'),
   ('base_library.zip',
-   'C:\\Users\\Administrator\\Desktop\\omnitech '
-   'script\\build\\script\\base_library.zip',
+   'C:\\Users\\Administrator\\Omnitech-Script\\build\\script\\base_library.zip',
    'DATA')],)

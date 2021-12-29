@@ -1,5 +1,4 @@
-('C:\\Users\\Administrator\\Desktop\\omnitech '
- 'script\\build\\script\\script.pkg',
+('C:\\Users\\Administrator\\Omnitech-Script\\build\\script\\script.pkg',
  {'BINARY': 1,
   'DATA': 1,
   'EXECUTABLE': 1,
@@ -9,8 +8,7 @@
   'PYZ': 0,
   'SPLASH': 1},
  [('PYZ-00.pyz',
-   'C:\\Users\\Administrator\\Desktop\\omnitech '
-   'script\\build\\script\\PYZ-00.pyz',
+   'C:\\Users\\Administrator\\Omnitech-Script\\build\\script\\PYZ-00.pyz',
    'PYZ'),
   ('struct',
    'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38\\lib\\struct.pyo',
@@ -48,7 +46,7 @@
    'script\\script-env\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
    'PYSOURCE'),
   ('script',
-   'C:\\Users\\Administrator\\Desktop\\omnitech script\\script.py',
+   'C:\\Users\\Administrator\\Omnitech-Script\\script.py',
    'PYSOURCE')],
  True,
  False,
