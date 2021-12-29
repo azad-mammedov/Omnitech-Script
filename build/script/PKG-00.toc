@@ -1,0 +1,59 @@
+('C:\\Users\\Administrator\\Desktop\\omnitech '
+ 'script\\build\\script\\script.pkg',
+ {'BINARY': 1,
+  'DATA': 1,
+  'EXECUTABLE': 1,
+  'EXTENSION': 1,
+  'PYMODULE': 1,
+  'PYSOURCE': 1,
+  'PYZ': 0,
+  'SPLASH': 1},
+ [('PYZ-00.pyz',
+   'C:\\Users\\Administrator\\Desktop\\omnitech '
+   'script\\build\\script\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38\\lib\\struct.pyo',
+   'PYMODULE'),
+  ('pyimod01_os_path',
+   'c:\\users\\administrator\\desktop\\omnitech '
+   'script\\script-env\\lib\\site-packages\\PyInstaller\\loader\\pyimod01_os_path.pyc',
+   'PYMODULE'),
+  ('pyimod02_archive',
+   'c:\\users\\administrator\\desktop\\omnitech '
+   'script\\script-env\\lib\\site-packages\\PyInstaller\\loader\\pyimod02_archive.pyc',
+   'PYMODULE'),
+  ('pyimod03_importers',
+   'c:\\users\\administrator\\desktop\\omnitech '
+   'script\\script-env\\lib\\site-packages\\PyInstaller\\loader\\pyimod03_importers.pyc',
+   'PYMODULE'),
+  ('pyimod04_ctypes',
+   'c:\\users\\administrator\\desktop\\omnitech '
+   'script\\script-env\\lib\\site-packages\\PyInstaller\\loader\\pyimod04_ctypes.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'c:\\users\\administrator\\desktop\\omnitech '
+   'script\\script-env\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Users\\Administrator\\Desktop\\omnitech '
+   'script\\script-env\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\Users\\Administrator\\Desktop\\omnitech '
+   'script\\script-env\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\Administrator\\Desktop\\omnitech '
+   'script\\script-env\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('script',
+   'C:\\Users\\Administrator\\Desktop\\omnitech script\\script.py',
+   'PYSOURCE')],
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)
