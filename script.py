@@ -78,6 +78,7 @@ for row in  ws.iter_rows(min_row=settings['last_row'], max_row=ws.max_row):
         token_response = json.loads(row[14].value)
         print('token request' ,token_request)
     except Exception as e:
+        wb2.save(output_file_name)
         sys.exit('Datani oxuyarken xeta bas verdi')
 
     new_data = make_data(token_request , token_response)
