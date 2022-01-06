@@ -43,11 +43,13 @@ def send_sms_on_error(message):
 
 
     
-def make_data(token_request : dict , token_response : dict) -> json:
+def make_data(token_request : dict , token_response : dict , *args, **kwargs) -> json:
     new_data = dict()
     new_data['requestData']  = dict()
     new_data['requestData']['tokenData'] = {'operationId':'createDocument'}
-    new_data['requestData']['tokenData'].update(json.loads(token_request['inputNewJson']))
+
+
+    new_data['requestData']['tokenData'].update(json.loads(token_request))
     operation_data = {
         'firstOperationAtUtc':"",
         'lastOperationAtUtc':"",
