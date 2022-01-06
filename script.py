@@ -49,7 +49,7 @@ def make_data(token_request : dict , token_response : dict , *args, **kwargs) ->
     new_data['requestData']['tokenData'] = {'operationId':'createDocument'}
 
 
-    new_data['requestData']['tokenData'].update(json.loads(token_request))
+    new_data['requestData']['tokenData'].update(token_request)
     operation_data = {
         'firstOperationAtUtc':"",
         'lastOperationAtUtc':"",
