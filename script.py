@@ -64,7 +64,7 @@ def make_data(token_request : dict , token_response : dict , *args, **kwargs) ->
     return new_data
 
 
-
+print(settings['last_row'])
 for row in  ws.iter_rows(min_row=settings['last_row'], max_row=ws.max_row):
     new_data = dict()
     if row[13].value == "":
@@ -76,11 +76,12 @@ for row in  ws.iter_rows(min_row=settings['last_row'], max_row=ws.max_row):
     try:
         token_request = json.loads(row[13].value)
         token_response = json.loads(row[14].value)
+        print('token request' ,token_request)
     except Exception as e:
         sys.exit('Datani oxuyarken xeta bas verdi')
 
     new_data = make_data(token_request , token_response)
-    
+    print('new_data',new_data)
     try:
         response = requests.post(f'http://{ip_address}:8989' , new_data)
 
