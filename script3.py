@@ -91,7 +91,7 @@ ws_opened , ws_result  = wb_opened.active , wb_result.active
 settings = json.loads(open('settings.json').read())
 
 
-def keyboard_exit_handler():
+def keyboard_exit_handler(*args, **kwargs):
     save_workbook(wb_result , output_file)
     sys.exit('Kod klaviaturadan dayandirildi')
 
@@ -230,7 +230,7 @@ def main():
     global row_count
 
     for row in ws_opened.iter_rows(min_row=row_count , max_row=ws_opened.max_row):
-
+        time.sleep(10)
         data = make_data(row)
         response = send_request(ip_address , data)
         write_result_file(ws_result , row ,data , response)
