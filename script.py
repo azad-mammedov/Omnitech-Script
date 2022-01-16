@@ -37,7 +37,7 @@ row_count = settings['last_row']
 
 
 # save setting file
-def save_setting(settings,file_name='settings.json' , status = 'Finished'):
+def save_setting(settings, status = 'Finished'):
     global row_count
     settings['last_row'] = row_count
     settings['status']  = status

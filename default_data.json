@@ -1,0 +1,58 @@
+{
+    "requestData": {
+        "tokenData": {
+            "operationId": "createDocument",
+            "parameters": {
+                "data": {
+                    "bonusSum": 0.0,
+                    "cashSum": 390.0,
+                    "cashier": "fad",
+                    "cashlessSum": 0.0,
+                    "creditSum": 0.0,
+                    "currency": "AZN",
+                    "firstOperationAtUtc": "",
+                    "items": [
+                        {
+                            "discount": 0.0,
+                            "itemCode": "98556",
+                            "itemCodeType": 0,
+                            "itemName": "TPS320",
+                            "itemPrice": 354.60,
+                            "itemQuantity": 1.0,
+                            "itemQuantityType": 0,
+                            "itemSum": 354.60,
+                            "itemVatPercent": 18.0
+                        },{
+                            "discount": 0.0,
+                            "itemCode": "152152152",
+                            "itemCodeType": 0,
+                            "itemName": "NMQ Token",
+                            "itemPrice": 35.40,
+                            "itemQuantity": 1.0,
+                            "itemQuantityType": 0,
+                            "itemSum": 35.40,
+                            "itemVatPercent": 18.0
+                        }
+                    ],
+                    "lastOperationAtUtc": "",
+                    "parentDocument": "6D97zVkiXNWKARDjWtZyK2wmemfQRwe3ftHMuPS9VjRC",
+                    "prepaymentSum": 0.0,
+                    "refund_document_number": "1352",
+                    "refund_short_document_id": "6D97zVkiXNWK",
+                    "sum": 390.0,
+                    "vatAmounts": [
+                        {
+                            "vatPercent": 18.0,
+                            "vatSum": 390.0
+                        }
+                    ]
+                },
+                "doc_type": "money_back"
+            },
+            "version": 1
+        },
+        "checkData": {
+            "check_type": 100
+        }
+    }
+}
