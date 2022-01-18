@@ -118,6 +118,10 @@ def save_setting(settings, status = 'Finished'):
 
 def make_data(row , *args, **kwargs) -> dict:
     new_data = DEFAULT_DATA.copy()
+    new_data['requestData']['tokenData']['parameters']['data']['items'] = []
+
+
+
 
 
     first_item_count = row[9].value or 0
@@ -126,16 +130,21 @@ def make_data(row , *args, **kwargs) -> dict:
     first_item_sum = first_item_price*first_item_count
 
 
-    first_item_data = {
-        'itemCode':ITEM_CODES.get(first_item_name , ''),
-        "itemCodeType": 0,
-        'itemName':first_item_name,
-        'itemPrice':first_item_price,
-        'itemQuantity': first_item_count,
-        "itemQuantityType": 0,
-        'itemSum':first_item_sum,
-        "itemVatPercent": 18.0
-    }
+
+    if first_item_count and first_item_price and first_item_name:
+
+        first_item_data = {
+            'itemCode':ITEM_CODES.get(first_item_name , ''),
+            "itemCodeType": 0,
+            'itemName':first_item_name,
+            'itemPrice':first_item_price,
+            'itemQuantity': first_item_count,
+            "itemQuantityType": 0,
+            'itemSum':first_item_sum,
+            "itemVatPercent": 18.0
+        }
+        new_data['requestData']['tokenData']['parameters']['data']['items'].append(first_item_data)
+
 
 
 
@@ -145,17 +154,18 @@ def make_data(row , *args, **kwargs) -> dict:
     second_item_price = float(row[14].value or 0)
     second_item_name = row[12].value or ""
     second_item_sum = second_item_price * second_item_count
-
-    second_item_data = {
-        'itemCode':ITEM_CODES.get(second_item_name , ''),
-        "itemCodeType": 0,
-        'itemName':second_item_name,
-        'itemPrice':second_item_price,
-        'itemQuantity':second_item_count,
-        "itemQuantityType": 0,
-        'itemSum':second_item_sum,
-        "itemVatPercent": 18.0
-    }
+    if second_item_count and second_item_name and second_item_price:
+        second_item_data = {
+            'itemCode':ITEM_CODES.get(second_item_name , ''),
+            "itemCodeType": 0,
+            'itemName':second_item_name,
+            'itemPrice':second_item_price,
+            'itemQuantity':second_item_count,
+            "itemQuantityType": 0,
+            'itemSum':second_item_sum,
+            "itemVatPercent": 18.0
+        }
+        new_data['requestData']['tokenData']['parameters']['data']['items'].append(second_item_data)
 
 
 
@@ -180,8 +190,8 @@ def make_data(row , *args, **kwargs) -> dict:
     }
 
 
-    new_data['requestData']['tokenData']['parameters']['data']['items'][0].update(first_item_data)
-    new_data['requestData']['tokenData']['parameters']['data']['items'][1].update(second_item_data)
+    # new_data['requestData']['tokenData']['parameters']['data']['items'][0].update(first_item_data)
+    # new_data['requestData']['tokenData']['parameters']['data']['items'][1].update(second_item_data)
     new_data['requestData']['tokenData']['parameters']['data'].update(additional_data)
 
 
