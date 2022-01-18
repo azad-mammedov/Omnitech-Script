@@ -240,14 +240,14 @@ def main():
     global row_count
 
     for row in ws_opened.iter_rows(min_row=2 , max_row=17):
-        # time.sleep(10)
+        time.sleep(10)
         data = make_data(row)
         print(data,'\n')
-        # response = send_request(ip_address , data)
-        # write_result_file(ws_result , row ,data , response)
-        # print(response,'saved' , row_count)
-        # row_count += 1
-        # time.sleep(5)
+        response = send_request(ip_address , data)
+        write_result_file(ws_result , row ,data , response)
+        print(response,'saved' , row_count)
+        row_count += 1
+        time.sleep(5)
 
 
 
