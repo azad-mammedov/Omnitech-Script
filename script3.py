@@ -239,7 +239,7 @@ def write_result_file(worksheet:Worksheet,row,sended_data , response):
 def main():
     global row_count
 
-    for row in ws_opened.iter_rows(min_row=2 , max_row=17):
+    for row in ws_opened.iter_rows(min_row=row_count , max_row=17):
         time.sleep(10)
         data = make_data(row)
         print(data,'\n')
