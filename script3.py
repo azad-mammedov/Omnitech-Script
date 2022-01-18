@@ -226,7 +226,7 @@ def write_result_file(worksheet:Worksheet,row,sended_data , response):
     
     worksheet[row[0].coordinate] = str(sended_data)
     worksheet[row[1].coordinate] = request_delivery_status
-    worksheet[row[2].coordinate] = response_data.text
+    worksheet[row[2].coordinate] = response.text
     save_workbook(wb_result,output_file)
     
 
@@ -239,14 +239,15 @@ def write_result_file(worksheet:Worksheet,row,sended_data , response):
 def main():
     global row_count
 
-    for row in ws_opened.iter_rows(min_row=row_count , max_row=ws_opened.max_row):
-        time.sleep(10)
+    for row in ws_opened.iter_rows(min_row=2 , max_row=17):
+        # time.sleep(10)
         data = make_data(row)
-        response = send_request(ip_address , data)
-        write_result_file(ws_result , row ,data , response)
-        print(response,'saved' , row_count)
-        row_count += 1
-        time.sleep(5)
+        print(data,'\n')
+        # response = send_request(ip_address , data)
+        # write_result_file(ws_result , row ,data , response)
+        # print(response,'saved' , row_count)
+        # row_count += 1
+        # time.sleep(5)
 
 
 

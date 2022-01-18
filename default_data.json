@@ -22,7 +22,8 @@
                             "itemQuantityType": 0,
                             "itemSum": 354.60,
                             "itemVatPercent": 18.0
-                        },{
+                        },
+                        {
                             "discount": 0.0,
                             "itemCode": "152152152",
                             "itemCodeType": 0,
