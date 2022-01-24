@@ -121,7 +121,8 @@ def make_data(row , *args, **kwargs) -> dict:
     new_data = DEFAULT_DATA.copy()
     print(row[10].value)
     
-    # new_data['requestData']['tokenData']['parameters']['data'] = dict()
+    # 
+    
     data = json.loads(row[10].value)
     
     new_data['requestData']['tokenData']['parameters']['data'].update(data)
@@ -253,14 +254,14 @@ def main():
     global row_count
 
     for row in ws_opened.iter_rows(min_row=row_count , max_row=ws_opened.max_row):
-        # time.sleep(10)
+        time.sleep(10)
         data = make_data(row)
         print(data,'\n')
-        # response = send_request(ip_address , data)
-        # write_result_file(ws_result , row ,data , response)
-        # print(response,'saved' , row_count)
-        # row_count += 1
-        # time.sleep(5)
+        response = send_request(ip_address , data)
+        write_result_file(ws_result , row ,data , response)
+        print(response,'saved' , row_count)
+        row_count += 1
+        time.sleep(5)
 
 
 
